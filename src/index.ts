@@ -21,12 +21,6 @@ function handleConsole(path: NodePath<Node>) {
 export default function (): PluginObj {
     return {
         visitor: {
-            enter() {
-                console.log(111);
-            },
-            exit() {
-                console.log(222);
-            },
             ExpressionStatement: handleConsole
         }
     };

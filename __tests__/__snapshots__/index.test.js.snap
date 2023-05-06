@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`函数内部 1`] = `
+"const foo = 1;
+function aaa() {}
+;"
+`;
+
+exports[`多层函数内部 1`] = `
+"const foo = 1;
+function aaa() {
+  function aaa() {}
+  ;
+}
+;"
+`;
+
+exports[`条件语句块 1`] = `
+"const foo = 1;
+if (foo) {}"
+`;
+
+exports[`类方法内部 1`] = `
+"class A {
+  getData() {}
+}"
+`;
